@@ -1,6 +1,6 @@
 {
-  "name": "Meu Aplicativo PWA",
-  "short_name": "MeuPWA",
+  "name": "Minha Wyden",
+  "short_name": "MW",
   "start_url": "./",
   "display": "standalone",
   "background_color": "#ffffff",
