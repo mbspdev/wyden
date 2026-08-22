@@ -3,22 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu PWA</title>
+  <title>Oi Sou Mario Bruno</title>
   
   <!-- Vincula o Manifesto do PWA -->
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#4A90E2">
+  <meta name="theme-color" content="#2ea44f">
+
+  <style>
+    /* Deixa o fundo todo verde e centraliza o texto */
+    body {
+      background-color: #2ea44f; /* Cor de fundo verde */
+      color: #ffffff;            /* Cor do texto branca */
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+  </style>
 </head>
 <body>
-  <h1>Meu Primeiro PWA</h1>
-  <p>Abra o menu do navegador e clique em "Adicionar à Tela de Início".</p>
+
+  <h1>Oi Sou Mario Bruno</h1>
+  <p>Meu PWA está funcionando!</p>
 
   <script>
-    // Registra o Service Worker no navegador
+    // Registra o Service Worker para habilitar o PWA
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js')
-        .then(() => console.log('Service Worker registrado com sucesso!'))
-        .catch(err => console.error('Falha ao registrar Service Worker:', err));
+        .then(() => console.log('Service Worker registrado!'))
+        .catch(err => console.error('Erro no Service Worker:', err));
     }
   </script>
 </body>
